@@ -4,29 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.12.4/index.js" integrity="sha512-wEnX3bNd/CdyrOFR0KIGlHihK/w9x3/It8Vc18aymEF/F/f1q0Mq8T+GSxF1wYUACLEGECapuIYQdQlKY1LBJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Simple Calculator built with NodeJS</h1>
-    <form method="POST" action="/">
-        <input type="number" name="num1" placeholder="first number">
-        <input type="number" name="num2" placeholder="second number">
-        <div>
-        <br>
-        <input type="submit" name="operation" value="ADD">
-        <input type="submit" name="operation" value="SUBTRACT">
+    <div class="container" style="width: 20%;margin-left: 40%;margin-top: 9%; border: 3px solid gray; padding: 15px;">
+        <h1>Simple Calculator built with NodeJS</h1>
+            <form method="POST" action="/">
+                <div>
+                <input type="number" name="num1" placeholder="First Number" style="width: 46%">
+                <input type="number" name="num2" placeholder="Second Number" style="width: 46%">
+                </div>
+                <div>
+                <br>
+                <input type="submit" class="button-34" name="operation" value="ADD" style="width: 49%">
+                <input type="submit" class="button-34" name="operation" value="SUBTRACT" style="width: 49%">
+                </div>
+                <br>
+                <div>
+                <input type="submit" class="button-34" name="operation" value="MULTIPLY" style="width: 49%">
+                <input type="submit" class="button-34" name="operation" value="DIVIDE" style="width: 49%">
+                </div>
+                <br>
+                <div>
+                <input type="submit" class="button-34" name="operation" value="SIN" style="width: 32%">
+                <input type="submit" class="button-34" name="operation" value="COS" style="width: 32%">
+                <input type="submit" class="button-34" name="operation" value="TAN" style="width: 32%">
+                </div>
+                <br>
+                <div>
+                    <a href="http://localhost:3000/" id="AC" class="button-34" >AC</a>
+                    <!-- <input type="submit" class="button-34 center" name="operation" value="AC" style="width: 99%;"> -->
+                </div>
+            </form>
         </div>
-        <br>
-        <div>
-        <input type="submit" name="operation" value="MULTIPLY">
-        <input type="submit" name="operation" value="DIVIDE">
-        </div>
-        <br>
-        <div>
-        <input type="submit" name="operation" value="SIN">
-        <input type="submit" name="operation" value="COS">
-        <input type="submit" name="operation" value="TAN">
-        </div>
-    </form>
 </body>
+
+
 </html>
+
+<script>
+</script>
+
+<style>
+/* CSS */
+
+h1{
+    text-align: center;
+}
+
+.container {
+    box-shadow: 11px 9px 5px 3px rgba(125, 151, 192, 0.41);
+}
+
+#AC {
+    display:block;
+    width: 99%;
+    text-align: center;
+}
+
+input[type=number] {
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  outline: 0 solid transparent;
+  padding: 8px 18px;    
+  border: 0;
+  text-decoration:none;
+}
+</style>

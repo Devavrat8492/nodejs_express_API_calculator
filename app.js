@@ -37,8 +37,10 @@ app.post('/',(req,res)=>{
     else if(value == 'TAN'){
         var output=Math.tan(n1*Math.PI/180)
     }
-
-    res.send('the value is '+output)
+    else if(value == 'AC'){
+        res.sendFile(__dirname+"/index.html")
+    }
+    res.send('The Value is '+output)
 })
 
 app.listen(3000,(res) => {
